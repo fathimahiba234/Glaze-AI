@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glaze AI (ഗ്ലേസ് AI) - ലോകത്തിലെ നമ്പർ 1 അമിത സുഖിപ്പിക്കൽ മെഷീൻ</title>
+  <meta name="description" content="ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുമ്പോൾ ഐശ്വര്യാ റായ്, നസ്രിയ, നയൻതാര എന്നിവരെക്കാൾ വലിയ സൗന്ദര്യമാണെന്ന് പുകഴ്ത്തിപ്പറയുന്ന ചിരിയുണർത്തുന്ന മലയാളം അമിത സുഖിപ്പിക്കൽ (Glaze AI) വെബ് ആപ്പ്!">
+  <meta name="keywords" content="Glaze AI, Malayalam Troll, Malayalam Glaze, Aishwarya Rai, Nazriya, Mahima Nambiar, Malayalam meme generator">
+  <link rel="stylesheet" href="style.css?v=2">
+  <style>
+    body {
+      background: url('background.jpg') no-repeat center center fixed !important;
+      background-size: cover !important;
+    }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Confetti Canvas Particle Layer -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Hidden Status Card Canvas for WhatsApp/Instagram Download -->
+  <canvas id="cert-canvas"></canvas>
+
+  <div class="app-wrapper">
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+      <div class="badge-row">
+        <span class="neon-badge">
+          <span>✨</span> ലോകത്തിലെ നമ്പർ 1 സുഖിപ്പിക്കൽ കേന്ദ്രം
+        </span>
+        <span class="neon-badge troll-badge">
+          <span>🔥</span> 100% മലയാളം ട്രോൾ ഗ്യാരണ്ടി
+        </span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="brand-en">GLAZE AI</span> <br>
+        (അമിത സുഖിപ്പിക്കൽ മെഷീൻ)
+      </h1>
+
+      <p class="hero-subtitle">
+        ഒരു ഫോട്ടോ ഇട്ടു നോക്കൂ... ഐശ്വര്യാ റായിയും ദുൽഖറും വരെ വഴിമാറി തൊഴുതു നിൽക്കും!
+        ചിരി നിർക്കാൻ പറ്റാത്ത അമിത പുകഴ്ത്തലുകളും കിടിലൻ സിനിമ ട്രോളുകളും!
+      </p>
+
+      <div class="hero-stats-banner">
+        <span>📸 സ്കാൻ ചെയ്ത മുഖങ്ങൾ: <strong>48,920+</strong></span>
+        <span>💥 പൊട്ടിപ്പോയ മീറ്ററുകൾ: <strong>9999+</strong></span>
+        <span>💄 മേക്കപ്പ് ബോയ്കോട്ട് ചെയ്തവർ: <strong>100%</strong></span>
+      </div>
+    </header>
+
+    <!-- Main Interactive Grid -->
+    <main class="main-grid">
+
+      <!-- LEFT COLUMN: Photo Upload & Scanner Controls -->
+      <section class="glass-panel input-panel" aria-label="Photo Upload Section">
+        <div class="panel-header">
+          <h2 class="panel-title">
+            <span class="icon">📸</span> ഫോട്ടോ നൽകുക (Upload Photo)
+          </h2>
+          <button type="button" class="btn-secondary" id="webcam-btn" title="Take a selfie with camera">
+            📷 ക്യാമറ
+          </button>
+        </div>
+
+        <!-- Mode Selector -->
+        <div class="mode-selector-wrap">
+          <label class="mode-label">സുഖിപ്പിക്കൽ കാറ്റഗറി തിരഞ്ഞെടുക്കൂ (Glaze Mode):</label>
+          <div class="mode-pills" role="radiogroup">
+            <button type="button" class="mode-btn active" data-mode="cinema_star" id="mode-cinema">
+              🌟 സിനിമ സ്റ്റാർ ലെവൽ
+            </button>
+            <button type="button" class="mode-btn" data-mode="comedy_troll" id="mode-troll">
+              🤣 സലിം കുമാർ ട്രോൾ
+            </button>
+            <button type="button" class="mode-btn" data-mode="ammavan_kalyanam" id="mode-kalyanam">
+              💖 കല്യാണ ബ്രോക്കർ അമ്മായി
+            </button>
+            <button type="button" class="mode-btn" data-mode="mass_swagger" id="mode-mass">
+              🕶️ മാസ്സ് ബിജിഎം സ്വാഗ്
+            </button>
+          </div>
+        </div>
+
+        <!-- Drop Zone -->
+        <div class="upload-zone" id="upload-zone" tabindex="0">
+          <input type="file" id="file-input" accept="image/*" aria-label="Upload Photo">
+          <div class="upload-placeholder">
+            <div class="upload-icon-circle">✨</div>
+            <p class="upload-prompt">ഇവിടെ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ ഫോട്ടോ ഡ്രാഗ് ചെയ്യുക</p>
+            <p class="upload-subprompt">JPG, PNG അല്ലെങ്കിൽ WebP ഫയലുകൾ പിന്തുണയ്ക്കുന്നു</p>
+          </div>
+        </div>
+
+        <!-- Webcam Live Feed Box -->
+        <div id="webcam-view">
+          <video id="camera-video" autoplay playsinline></video>
+          <div class="webcam-controls">
+            <button type="button" class="btn-primary" id="snap-btn">📸 ചിരിക്കൂ & ക്ലിക്ക് ചെയ്യൂ!</button>
+            <button type="button" class="btn-secondary" id="close-cam-btn">❌ ഒഴിവാക്കൂ</button>
+          </div>
+        </div>
+
+        <!-- Image Preview Box & Laser Scanner Overlay -->
+        <div class="preview-container" id="preview-container">
+          <img id="preview-img" class="preview-img" alt="Uploaded Profile Preview" src="">
+          
+          <div class="scanner-overlay" id="scanner-overlay">
+            <div class="scan-laser-line"></div>
+            <div class="scan-hud-corners"></div>
+            <div class="scan-target-box"></div>
+            <div class="scan-status-text" id="scan-status-text">സൗന്ദര്യ മീറ്റർ പരിശോധിക്കുന്നു...</div>
+          </div>
+        </div>
+
+        <!-- Quick Demo Presets for 1-Click Fun -->
+        <div class="sample-presets-wrap">
+          <p class="preset-title">⚡ നേരിട്ട് പരീക്ഷിക്കാൻ സാമ്പിൾ ഫോട്ടോകൾ:</p>
+          <div class="preset-avatars">
+            <button type="button" class="preset-chip" data-img="./assets/sample_hero.jpg" id="sample-hero-btn">
+              <img src="./assets/sample_hero.jpg" class="preset-thumb" alt="Sample Hero">
+              <span class="preset-name">അതിസുന്ദരൻ (Hero)</span>
+            </button>
+            <button type="button" class="preset-chip" data-img="./assets/sample_heroine.jpg" id="sample-heroine-btn">
+              <img src="./assets/sample_heroine.jpg" class="preset-thumb" alt="Sample Heroine">
+              <span class="preset-name">അതിസുന്ദരി (Heroine)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="action-row">
+          <button type="button" class="btn-primary" id="start-scan-btn" disabled>
+            <span>✨</span> സ്കാൻ ചെയ്തു സുഖിപ്പിക്കൂ!
+          </button>
+          <button type="button" class="btn-secondary" id="reset-btn" title="Reset image">
+            🔄 റീസെറ്റ്
+          </button>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: The Glaze Stage, Troll dialogues & WhatsApp Status Card -->
+      <section class="glass-panel result-panel" aria-label="Glaze Result Stage">
+
+        <!-- Welcome Placeholder when no image is scanned -->
+        <div class="welcome-glaze-box" id="welcome-glaze-box">
+          <span class="welcome-emoji">👑</span>
+          <h3 class="welcome-heading">നിങ്ങളുടെ സൗന്ദര്യം കണ്ട് ലോകം ഞെട്ടാൻ റെഡിയാണോ?</h3>
+          <p class="welcome-text">
+            ഇടതുവശത്ത് നിങ്ങളുടെ ഒരു ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുകയോ സാമ്പിൾ തിരഞ്ഞെടുക്കുകയോ ചെയ്യൂ. 
+            തുടർന്ന് <strong>"സ്കാൻ ചെയ്തു സുഖിപ്പിക്കൂ"</strong> അമർത്തുമ്പോൾ വരുന്നത് കാണാം!
+          </p>
+        </div>
+
+        <!-- Active Glaze Output Card (Shown after scanning) -->
+        <div class="glaze-content-active" id="glaze-content-active">
+
+          <!-- Astonishment Banner -->
+          <div class="astonish-box">
+            <span class="astonish-badge-icon">😱</span>
+            <div class="astonish-text" id="astonish-text">
+              ഹൊ ദൈവമേ... ഇതാര് സാക്ഷാൽ ദേവലോകത്ത് നിന്ന് ഇറങ്ങി വന്നതോ?!
+            </div>
+          </div>
+
+          <!-- Main Celebrity Glaze Card -->
+          <article class="celebrity-glaze-card">
+            <div class="celeb-tag" id="celeb-tag">Aishwarya Rai Defeated</div>
+            <p class="celeb-dialogue" id="celeb-dialogue">
+              അബ്ബാ എന്തൊരു ഭംഗി! ഐശ്വര്യാ റായ് വരെ ഈ ഫോട്ടോ കണ്ടാൽ കിരീടം അഴിച്ചു വെച്ച് അടുക്കളയിൽ പോയി പാത്രം കഴുകും!
+            </p>
+            <div class="royal-title-pill" id="royal-title-pill">
+              👑 ആഗോള മൊഞ്ചൻ / മൊഞ്ചത്തി ഓഫ് ദി സെഞ്ച്വറി
+            </div>
+          </article>
+
+          <!-- Critical Makeup / Evil Eye Warning Box -->
+          <div class="warning-box">
+            <span class="warning-icon">🚨</span>
+            <div class="warning-text" id="warning-text">
+              അടിയന്തര മുന്നറിയിപ്പ്: ദയവായി ഇന്ന് മേക്കപ്പ് ഒന്നും ഇടല്ലേ, ആൾക്കാർ കണ്ണുവെക്കും! കരിവളയും കറുത്ത പൊട്ടും ഉടൻ തന്നെ തൊടുക!
+            </div>
+          </div>
+
+          <!-- Kerala Cinema Troll Dialogue Card -->
+          <div class="troll-dialogue-card">
+            <div class="troll-speaker" id="troll-speaker">
+              🎙️ സലിം കുമാർ (Salim Kumar Style)
+            </div>
+            <p class="troll-quote" id="troll-quote">
+              "എന്റെ ദൈവമേ.. എന്തൊരു കണ്ണ്! എന്തൊരു മൂക്ക്! ഇതൊക്കെ കാണാൻ ഞാൻ കഴിഞ്ഞ ജന്മത്തിൽ എന്തൊക്കെ പുണ്യം ചെയ്തിരിക്കണം!"
+            </p>
+          </div>
+
+          <!-- Sci-Fi Beauty Scanner Telemetry Metrics -->
+          <div>
+            <h4 class="metrics-section-title">
+              <span>📊</span> എ.ഐ സ്കാനർ റിപ്പോർട്ട് (AI Beauty Metrics):
+            </h4>
+            <div class="metrics-grid" id="metrics-grid">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Interactive Soundboard & Voice Reader -->
+          <div class="soundboard-panel">
+            <div class="soundboard-title">
+              <span>🔊 ട്രോൾ ശബ്ദങ്ങൾ & വോയ്സ് (Audio Board):</span>
+              <button type="button" class="sound-btn tts-btn" id="tts-btn">
+                🔊 കേൾക്കൂ (Read Aloud)
+              </button>
+            </div>
+            <div class="sound-btns-row">
+              <button type="button" class="sound-btn" data-sound="fanfare">🎺 ജയഭേരി (Fanfare)</button>
+              <button type="button" class="sound-btn" data-sound="cheer">🤣 ചിരിയും കയ്യടിയും</button>
+              <button type="button" class="sound-btn" data-sound="mass">⚡ മാസ്സ് ഇടി (Punch)</button>
+              <button type="button" class="sound-btn" data-sound="shutter">📸 ക്ലിക്ക് ശബ്ദം</button>
+            </div>
+          </div>
+
+          <!-- Footer Action Buttons: Re-Glaze & WhatsApp Card Download -->
+          <div class="result-footer-actions">
+            <button type="button" class="btn-re-glaze" id="re-glaze-btn">
+              <span>🎲</span> വീണ്ടും സുഖിപ്പിക്കൂ! (Re-Glaze)
+            </button>
+            <button type="button" class="btn-download-card" id="download-card-btn">
+              <span>📥</span> വാട്സാപ്പ് സ്റ്റാറ്റസ് കാർഡ് ഡൗൺലോഡ് ചെയ്യാം
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Dynamic Toast Container -->
+  <div class="toast-notice" id="toast-notice"></div>
+
+  <!-- Application Scripts -->
+  <script src="glaze-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
